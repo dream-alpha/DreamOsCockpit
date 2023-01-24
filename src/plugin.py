@@ -19,7 +19,6 @@
 # <http://www.gnu.org/licenses/>.
 
 
-from Plugins.Plugin import PluginDescriptor
 from .Debug import logger
 from .Version import VERSION
 
