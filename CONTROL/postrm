@@ -1,0 +1,12 @@
+#!/bin/sh
+if [ "$1" = "remove" ]; then
+	echo "Removing DreamOsCockpit systemplugin from the system ..."
+	rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/DreamOsCockpit > /dev/null 2>&1
+else
+	find /usr/lib/enigma2/python/Plugins/SystemPlugins/DreamOsCockpit -type f -name "*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+fi
+
+if [ -f /usr/lib/enigma2/python/Tools/KeyBindings.py.bak ]; then
+	mv /usr/lib/enigma2/python/Tools/KeyBindings.py.bak /usr/lib/enigma2/python/Tools/KeyBindings.py
+fi
+exit 0

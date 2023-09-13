@@ -1,0 +1,5 @@
+Description: DreamOsCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-systemplugins-dreamoscockpit
+Version: 0.2.3
+Architecture: all
